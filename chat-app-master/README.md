@@ -1,4 +1,4 @@
-# Chat Application
+# chat-app
 
 This is a real-time chat application built with Spring Boot and WebSocket.
 
@@ -30,7 +30,7 @@ This is a real-time chat application built with Spring Boot and WebSocket.
 
 2.  **Clone the repository:**
     ```bash
-    git clone https://github.com/james14k/chat-app.git
+    git clone https://github.com/James14k/chat-app.git
     ```
 
 3.  **Navigate to the project directory:**
