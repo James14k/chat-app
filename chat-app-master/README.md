@@ -1,92 +1,68 @@
-chat-app
-Esta es una aplicación de chat en tiempo real construida con Spring Boot y WebSocket.
+# 💬 Chat-App (Real-Time)
 
-Características
-Mensajería en tiempo real entre usuarios.
+Esta es una aplicación de chat en tiempo real diseñada para ofrecer una experiencia de comunicación fluida y directa. Construida con **Spring Boot** para el robustez del backend y **WebSockets** para garantizar la bidireccionalidad de los mensajes.
 
-Notificaciones de conexión y desconexión de usuarios.
+---
 
-Interfaz de usuario simple e intuitiva.
+## ✨ Características
 
-Tecnologías Utilizadas
-Backend:
+* **Mensajería Instantánea:** Envío y recepción de mensajes en tiempo real sin recargar la página.
+* **Gestión de Presencia:** Notificaciones automáticas cuando un usuario entra o sale de la sala.
+* **UI Minimalista:** Interfaz de usuario limpia, intuitiva y fácil de usar.
+* **Persistencia Ligera:** Uso de base de datos en memoria para agilidad en el desarrollo.
 
-Java 21
+---
 
-Spring Boot 3
+## 🛠️ Tecnologías Utilizadas
 
-Spring WebSocket para comunicación en tiempo real.
+### **Backend**
+* ![Java](https://img.shields.io/badge/Java-21-ED8B00?style=flat&logo=openjdk&logoColor=white) - Lenguaje principal.
+* ![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-6DB33F?style=flat&logo=spring-boot&logoColor=white) - Framework base.
+* **Spring WebSocket**: Implementación de protocolos para tiempo real.
+* **Spring Data JPA**: Abstracción de persistencia de datos.
+* **H2 Database**: Base de datos SQL en memoria.
+* **Maven**: Gestión de dependencias y ciclo de vida del proyecto.
 
-Spring Data JPA para la interacción con la base de datos.
+### **Frontend**
+* ![Thymeleaf](https://img.shields.io/badge/Thymeleaf-005F0F?style=flat&logo=thymeleaf&logoColor=white) - Motor de plantillas.
+* ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) - Tecnologías web estándar.
+* **StompJS**: Cliente para comunicación vía WebSocket.
 
-Base de datos H2 para el almacenamiento de datos en memoria.
+---
 
-Maven para la gestión de dependencias.
-
-Frontend:
-
-Thymeleaf como motor de plantillas del lado del servidor.
-
-HTML5, CSS3, JavaScript.
-
-StompJS para la comunicación vía WebSocket.
-
-Cómo Ejecutar
-Requisitos previos:
-
-Java 21 o superior.
-
-Maven 3.2+
-
-Clonar el repositorio:
-
-Bash
-
-git clone https://github.com/James14k/chat-app.git
-Navegar al directorio del proyecto:
-
-Bash
-
-cd chat-app
-Ejecutar la aplicación usando Maven:
-
-Bash
-
-./mvnw spring-boot:run
-Acceder a la aplicación: Abre tu navegador web y dirígete a http://localhost:8080
-
-Estructura del Proyecto
+## 📁 Estructura del Proyecto
 .
 ├── src
 │   ├── main
-│   │   ├── java
-│   │   │   └── com
-│   │   │       └── cwa
-│   │   │           └── chatapp
-│   │   │               ├── config
-│   │   │               │   ├── WebSocketConfig.java
-│   │   │               │   └── WebSocketEventListener.java
-│   │   │               ├── controller
-│   │   │               │   ├── ApiController.java
-│   │   │               │   ├── ChatController.java
-│   │   │               │   └── WebController.java
-│   │   │               ├── entity
-│   │   │               │   ├── Message.java
-│   │   │               │   └── User.java
-│   │   │               ├── repository
-│   │   │               │   ├── MessageRepository.java
-│   │   │               │   └── UserRepository.java
-│   │   │               └── service
-│   │   │                   ├── MessageService.java
-│   │   │                   └── UserService.java
+│   │   ├── java/com/cwa/chatapp
+│   │   │   ├── config        # Configuración de WebSockets y eventos
+│   │   │   ├── controller    # Endpoints de API y controladores web
+│   │   │   ├── entity        # Modelos de datos (User, Message)
+│   │   │   ├── repository    # Interfaces de Spring Data JPA
+│   │   │   └── service       # Lógica de negocio
 │   │   └── resources
-│   │       ├── static
-│   │       │   ├── css
-│   │       │   │   └── chat.css
-│   │       │   └── js
-│   │       │       └── chat.js
-│   │       └── templates
-│   │           ├── chat.html
-│   │           └── index.html
-│   └── test
-└── pom.xml
+│   │       ├── static        # Estilos (CSS) y scripts (JS)
+│   │       └── templates     # Vistas HTML con Thymeleaf
+│   └── test                  # Pruebas unitarias
+└── pom.xml                   # Configuración de Maven
+
+---
+
+
+
+## 🚀 Cómo Ejecutar el Proyecto
+
+### Requisitos previos
+* **Java 21** o superior instalado.
+* **Maven 3.2+** instalado.
+  
+
+### Pasos a seguir
+1. **Clonar el repositorio:**
+   ```bash
+ git clone [https://github.com/James14k/chat-app.git](https://github.com/James14k/chat-app.git)
+
+ 2. *cd chat-app
+ 3. **./mvnw spring-boot:run
+ 4. **Abre tu navegador en: http://localhost:8080
+ 
