@@ -31,21 +31,22 @@ Esta es una aplicación de chat en tiempo real diseñada para ofrecer una experi
 ---
 
 ## 📁 Estructura del Proyecto
-.
-├── src
-│   ├── main
-│   │   ├── java/com/cwa/chatapp
-│   │   │   ├── config        # Configuración de WebSockets y eventos
-│   │   │   ├── controller    # Endpoints de API y controladores web
-│   │   │   ├── entity        # Modelos de datos (User, Message)
-│   │   │   ├── repository    # Interfaces de Spring Data JPA
-│   │   │   └── service       # Lógica de negocio
-│   │   └── resources
-│   │       ├── static        # Estilos (CSS) y scripts (JS)
-│   │       └── templates     # Vistas HTML con Thymeleaf
-│   └── test                  # Pruebas unitarias
-└── pom.xml                   # Configuración de Maven
 
+```text
+.
+├── 📂 src
+│   ├── 📂 main
+│   │   ├── 📂 java/com/cwa/chatapp
+│   │   │   ├── 📄 config/      # Configuración de WebSockets
+│   │   │   ├── 📄 controller/  # Controladores REST y Web
+│   │   │   ├── 📄 entity/      # Modelos de base de datos
+│   │   │   ├── 📄 repository/  # Acceso a datos (JPA)
+│   │   │   └── 📄 service/     # Lógica de negocio
+│   │   └── 📂 resources
+│   │       ├── 📂 static/      # Archivos JS y CSS
+│   │       └── 📂 templates/   # Vistas Thymeleaf (HTML)
+│   └── 📂 test                 # Pruebas unitarias y de integración
+└── 📄 pom.xml                  # Dependencias de Maven
 ---
 
 
