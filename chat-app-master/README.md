@@ -1,54 +1,61 @@
-# chat-app
+chat-app
+Esta es una aplicación de chat en tiempo real construida con Spring Boot y WebSocket.
 
-This is a real-time chat application built with Spring Boot and WebSocket.
+Características
+Mensajería en tiempo real entre usuarios.
 
-## Features
+Notificaciones de conexión y desconexión de usuarios.
 
-*   Real-time messaging between users.
-*   User connect and disconnect notifications.
-*   Simple and intuitive user interface.
+Interfaz de usuario simple e intuitiva.
 
-## Technologies Used
+Tecnologías Utilizadas
+Backend:
 
-*   **Backend:**
-    *   Java 21
-    *   Spring Boot 3
-    *   Spring WebSocket for real-time communication
-    *   Spring Data JPA for database interaction
-    *   H2 Database for in-memory data storage
-    *   Maven for dependency management
-*   **Frontend:**
-    *   Thymeleaf for server-side templating
-    *   HTML5, CSS3, JavaScript
-    *   StompJS for WebSocket communication
+Java 21
 
-## How to Run
+Spring Boot 3
 
-1.  **Prerequisites:**
-    *   Java 21 or later
-    *   Maven 3.2+
+Spring WebSocket para comunicación en tiempo real.
 
-2.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/James14k/chat-app.git
-    ```
+Spring Data JPA para la interacción con la base de datos.
 
-3.  **Navigate to the project directory:**
-    ```bash
-    cd chat-app
-    ```
+Base de datos H2 para el almacenamiento de datos en memoria.
 
-4.  **Run the application using Maven:**
-    ```bash
-    ./mvnw spring-boot:run
-    ```
+Maven para la gestión de dependencias.
 
-5.  **Access the application:**
-    Open your web browser and go to `http://localhost:8080`
+Frontend:
 
-## Project Structure
+Thymeleaf como motor de plantillas del lado del servidor.
 
-```
+HTML5, CSS3, JavaScript.
+
+StompJS para la comunicación vía WebSocket.
+
+Cómo Ejecutar
+Requisitos previos:
+
+Java 21 o superior.
+
+Maven 3.2+
+
+Clonar el repositorio:
+
+Bash
+
+git clone https://github.com/James14k/chat-app.git
+Navegar al directorio del proyecto:
+
+Bash
+
+cd chat-app
+Ejecutar la aplicación usando Maven:
+
+Bash
+
+./mvnw spring-boot:run
+Acceder a la aplicación: Abre tu navegador web y dirígete a http://localhost:8080
+
+Estructura del Proyecto
 .
 ├── src
 │   ├── main
@@ -83,4 +90,3 @@ This is a real-time chat application built with Spring Boot and WebSocket.
 │   │           └── index.html
 │   └── test
 └── pom.xml
-```
